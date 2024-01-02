@@ -1,0 +1,99 @@
+:root {
+    --leaf: #C6E2B4;
+    --forest: #6DA945;
+    --wood: #672F09;
+    --cloud: #DDECEF;
+
+}
+body {
+    /* display: flex; */
+    line-height: 1.1;
+    font-family: Bahnschrift, sans-serif;
+    background-color: var(--leaf);
+    color: var(--wood);
+    padding: 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: var(--forest); */
+    background-image: linear-gradient(
+        var(--forest) 10%, var(--leaf) 100%);
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.75rem;
+    color: black;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+nav a {
+    color: var(--wood);
+    text-decoration: none;
+    margin: 1%;
+}
+nav a:hover {
+    color: var(--cloud);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.text-gradient {
+    background: linear-gradient(
+        black 0%, var(--wood) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+img.background-fade {
+    box-shadow: 50%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    /* height: 100%; */
+    box-shadow: inset 0 0 40px 40px;
+    mask-image: linear-gradient();
+}
